@@ -19,8 +19,8 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'corretto'
-          java-version: 21
-          cache: maven
+          java-version: '21'
+          cache: 'maven'
 
       - name: Run tests (Unit Test & Integration Test)
         run: mvn test
